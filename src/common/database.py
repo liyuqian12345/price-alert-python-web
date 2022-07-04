@@ -6,7 +6,7 @@ __author__ = 'yuqian'
 
 
 class Database(object):
-    URI = "mongodb+srv://liyuqian:mm13679097617@cluster0.elaws.mongodb.net/test"
+    URI = "mongodb+srv://yuqian:mm13679097617@cluster0.elaws.mongodb.net/test"
     DATABASE = None
 
     @staticmethod
