@@ -6,13 +6,13 @@ __author__ = 'yuqian'
 
 
 class Database(object):
-    URI = os.environ.get("mongodb+srv://liyuqian:mm13679097617@cluster0.ywjqj.mongodb.net/test")
+    URI = "mongodb+srv://liyuqian:mm13679097617@cluster0.elaws.mongodb.net/test"
     DATABASE = None
 
     @staticmethod
     def initialize():
         client = pymongo.MongoClient(Database.URI)
-        Database.DATABASE = client.get_default_database()
+        Database.DATABASE = client["price_alert"]
 
     @staticmethod
     def insert(collection, data):
